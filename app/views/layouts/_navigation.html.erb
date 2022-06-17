@@ -1,8 +1,6 @@
 <div class="ui small inverted menu">
   <div class="ui container">
-    <a class="item">
-      Chatroom
-    </a>
+    <%= link_to "Chatroom", root_path, class: "item" %>
     <a class="item">
       メッセージ
     </a>
@@ -11,7 +9,7 @@
         アカウント <i class="dropdown icon"></i>
         <div class="menu">
           <a class="item">ログアウト</a>
-          <a class="item">ログイン</a>
+          <%= link_to "ログイン", login_path, class: "item" %>
           <a class="item">新規作成</a>
         </div>
       </div>

@@ -7,6 +7,7 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "jquery"
 
+
 /* jQuery for Semantic UI  */
 $(function(){
 
