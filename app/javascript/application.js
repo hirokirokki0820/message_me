@@ -17,9 +17,8 @@ $(function(){
   $('.ui.accordion').accordion();
 
   /* ポップアップ */
-  $('.activating.element').popup();
-  $('.button').popup({
-    inline: true
-  });
+  // $('.button').popup({
+  //   inline: true
+  // });
 
 });
