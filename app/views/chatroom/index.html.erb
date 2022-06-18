@@ -8,17 +8,8 @@
   <div class="ten wide column">
     <div class="ui fluid raised card chatbox">
       <div class="content">
-        <% @messages.each do |message| %>
-          <div class="ui feed">
-            <div class="event">
-              <div class="content">
-                <div class="summary">
-                  <em><%= message.user.username %></em>: <%= message.body %>
-                </div>
-              </div>
-            </div>
-          </div>
-        <% end %>
+        <%= render @messages %>
+        <%# @messages は app/views/messages/_messages.html.erb を参照してレンダリングする %>
       </div>
       <div class="extra content">
         <form class="ui reply form">
