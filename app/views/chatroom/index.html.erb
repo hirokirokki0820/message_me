@@ -12,14 +12,14 @@
         <%# @messages は app/views/messages/_messages.html.erb を参照してレンダリングする %>
       </div>
       <div class="extra content">
-        <form class="ui reply form">
+        <%= form_with(model: @message, html: {class: "ui reply form", role: "form"}, url: message_path) do |f| %>
           <div class="field">
             <div class="ui fluid icon input">
-            <input type="text" placeholder="メッセージを入力してください...">
-            <i class="bordered inverted orange edit icon"></i>
+              <%= f.text_field :body %>
+              <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe %>
+            </div>
           </div>
-          </div>
-        </form>
+        <% end %>
       </div>
     </div>
   </div>
