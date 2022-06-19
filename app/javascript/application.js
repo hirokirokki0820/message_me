@@ -20,7 +20,9 @@ $(function(){
   $('.ui.accordion').accordion();
 
   /* フラッシュメッセージを閉じるボタン */
-
+  $('.message .close').on('click', function() {
+    $(this).closest('.message').transition('fade');
+  });
 
   /* ポップアップ */
   // $('.button').popup({
