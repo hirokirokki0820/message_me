@@ -5,6 +5,7 @@
 
 import "controllers"
 import "jquery"
+import "channels"
 // link_to の method: :delete を正常に動かすため必要
 import Rails from "@rails/ujs"
 Rails.start()
